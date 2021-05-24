@@ -1,0 +1,14 @@
+.Navbar{
+    background: green;
+}
+
+.Navbar div a{
+    font-size: 35px;
+    line-height: 1.5;
+    color: #1883cf;
+    text-decoration: none;
+}
+
+.Navbar div a.activeLink{
+    color: gold;
+}

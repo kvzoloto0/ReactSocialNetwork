@@ -1,0 +1,21 @@
+.dialogs{
+    background: hotpink;
+    color: white;
+    padding: 45px;
+}
+
+.dialogsItems .dialog{
+    padding: 10px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.dialogsItems a{
+    text-decoration: none;
+}
+
+.DialogMessage{
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+}
