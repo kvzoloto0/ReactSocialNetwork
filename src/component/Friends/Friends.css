@@ -1,0 +1,17 @@
+.Friends{
+    padding: 100px 0px;
+}
+
+.Friends .blockdialogsAvatar{
+    display: flex;
+}
+
+.Friends .blockdialogsAvatar .dialogsAvatar{
+    align-items: flex-start;
+    width: 80px;
+}
+
+.Friends .heading{
+    font-size: 60px;
+    color: aquamarine;
+}

@@ -15,7 +15,19 @@
 }
 
 .DialogMessage{
-    padding: 10px;
+    padding: 30px;
     font-size: 25px;
     color: white;
+}
+
+.dialogsAvatar{
+    width: 50px;
+    margin-right: 20px;
+}
+
+.messageKirill{
+    padding: 0px 0px 0px 0px;
+    font-size: 25px;
+    color: black !important;
+    float: right !important;
 }
