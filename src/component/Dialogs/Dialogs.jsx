@@ -4,27 +4,13 @@ import {NavLink} from "react-router-dom";
 import DialogsItems from "./DialogItems/DialogItems";
 import Message from "./Message/Message";
 
-const Dialogs = () => {
-
-    let dialogs = [
-        {id: 1, name: 'NATAWA'},
-        {id: 2, name: 'DAWA'},
-        {id: 3, name: 'PAWA'},
-        {id: 4, name: 'Viktor'},
-        {id: 5, name: 'BAC9'},
-    ]
-    
-    let messages = [
-        {id: 1, message: 'Hi'},
-        {id: 2, message: 'how do you do?'},
-        {id: 3, message: 'Yo'},
-        {id: 5, message: 'Yo'},
-        {id: 4, message: 'Yo'},
-    ]
+const Dialogs = (props) => {
 
 
-    let dialogsElements = dialogs.map ( d => <DialogsItems name ={d.name} id={d.id} /> );
-    let messagesElements = messages.map ( m => <Message message ={m.message} /> )
+
+
+    let dialogsElements = props.dialogs.map ( d => <DialogsItems name ={d.name} id={d.id} /> );
+    let messagesElements = props.messages.map ( m => <Message message ={m.message} /> )
 
 
 

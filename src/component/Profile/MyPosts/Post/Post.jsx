@@ -2,6 +2,7 @@ import React from 'react';
 import './Post.css';
 import imgPost from './../../../img/FotoN.png';
 
+
 const Post = (props) => {
     return (
           <div>
