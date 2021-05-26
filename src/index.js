@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import state from './redux/state';
+import {addPost} from './redux/state';
+
 
 // данные 28
 // эти данные ушли в отдельный файл в src/redux/state.js
@@ -29,11 +31,12 @@ import state from './redux/state';
 // ]
 
 
+
 ReactDOM.render(
   <React.StrictMode>
     {/* ети данные были с данные 28 */}  
     {/* <App posts = { posts } dialogs = { dialogs } messages = { messages } /> */}
-    <App state = { state } />
+    <App state = {state} addPost = {addPost}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
