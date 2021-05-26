@@ -10,7 +10,7 @@ const ProfileInfo = () => {
           <img src={imgProfile} className="imgProfile" />
         </div>
         <div>
-          ava + description
+          В низу можно написать текст и отправить и оно все сохраниться до перезагрузки странички
         </div>
       </div> 
     )

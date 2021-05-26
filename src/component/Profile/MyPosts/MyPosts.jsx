@@ -16,13 +16,13 @@ const MyPosts = (props) => {
   let addPost = () => {
     let text = newPostElement.current.value;
     props.addPost(text);
+    newPostElement.current.value = '';
   }
 
   let postsElements = props.posts.map ( p => <Post message = {p.message} /> )
 
     return (
       <div>
-        My posts
         <div>
           <textarea ref={ newPostElement }></textarea>
           <button onClick={ addPost }>Add post</button>

@@ -1,10 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {rerenderEntireTree} from './render';
 import state from './redux/state';
-import {addPost} from './redux/state';
+
 
 
 // данные 28
@@ -31,17 +28,22 @@ import {addPost} from './redux/state';
 // ]
 
 
+// delete 33 bo infa v render.js HADO 4tobi infa obHovlalaci
+// let rerenderEntireTree = () => {
+//   ReactDOM.render(
+//     <React.StrictMode>
+//       {/* ети данные были с данные 28 */}  
+//       {/* <App posts = { posts } dialogs = { dialogs } messages = { messages } /> */}
+//       <App state = {state} addPost = {addPost}/>
+//     </React.StrictMode>,
+//     document.getElementById('root')
+//   );
+// }
 
-ReactDOM.render(
-  <React.StrictMode>
-    {/* ети данные были с данные 28 */}  
-    {/* <App posts = { posts } dialogs = { dialogs } messages = { messages } /> */}
-    <App state = {state} addPost = {addPost}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+rerenderEntireTree(state);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();

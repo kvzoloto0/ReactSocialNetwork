@@ -4,7 +4,7 @@ import './Settings.css';
 const Settings = () => {
     return (
         <div className="col-9 Settings">
-            Ебать ты хуй Settings пош'л смотреть, маешь гарні яйця 
+            Settings как бы да
         </div>
     )
 }
